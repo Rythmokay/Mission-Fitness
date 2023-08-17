@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+.contento {
+    position: relative; /* Add this line */
+    z-index: 999; /* Add this line to bring the content on top of the video */
+    font-weight: 800px;
+}
+
+
+body{
+    background-color: black;
+    height: min-content;
+    
+}
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+header .brand{
+   color: aqua; 
+   font-size: 1.5em;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+header .navigation{
+    position: relative;
+}
+header .navigation .navigation-items a{
+   position: relative;
+   color: aqua; 
+   font-size: 1em;
+   font-weight: 500;
+   text-decoration: none;
+   margin-left: 30px;
+   transition: 0.3 ease;
+}
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: aqua; 
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+.homy{
+    display: inline;
+    text-decoration: none;
+    min-width: fit-content;
+}
+nav{
+    padding: 10px;
+}
+h1{
+    color: aqua;
+    margin: auto auto auto 0px ;
+}
+.contento{
+    font-weight: 800px;
+
+}
+.carousel {
+    margin-top: 5vh;
+    height: 500px;
+    width: 100%;
+   
+}
+.caro-caro{
+    border: 2px solid aqua;
+    border-radius: 9%;
+    padding: 30px;
+    background-position: cover;
+}
+.d-block{
+    height: 100vh;
+} 
+
+  
+ 
+  
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.7;
+    font-weight: 300;
+    color: var(--text-gray);
+  }
+  
+  .description {
+    white-space: wrap;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .wrap {
+    display: flex;
+    /* justify: space-between; */
+    align-items: stretch;
+    width: 100%;
+    gap: 24px;
+    padding: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    position: relative;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 20px;
+  }
+  
+  .box-top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  
+  .box-image {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+  
+  .title-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .box-title {
+    border-left: 3px solid var(--purple);
+    padding-left: 12px;
+  }
+  
+  .user-follow-info {
+    color: aquamarine;
+  }
+  
+  .button {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    text-decoration: none;
+    padding: 16px;
+    color: #ffffff;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px aqua inherit;
+    transition: background 0.4s ease;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background: aqua;
+    color: black;
+    text-decoration: none;
+
+  }
+  
+ 
+  /* RESPONSIVE QUERIES */
+  
+  @media (min-width: 320px) {
+    .title-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 460px) {
+    .title-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .box {
+      flex-basis: calc(50% - 12px);
+    }
+    .title-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 840px) {
+    .title-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .box {
+      flex-basis: calc(33.3% - 16px);
+    }
+    .title-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .box {
+      flex-basis: calc(25% - 18px);
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+  .profilet{
+    margin-top: 26vh;
+  }
+  .trainer-body{
+    background-image: url(../doc/athletic-man-posing-photo-man-with-perfect-physique-black-wall-back-view-strength-motivation_124865-4554.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img{
+    border-radius: 20px;
+  }
